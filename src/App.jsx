@@ -7,6 +7,7 @@ import About from '../src/pages/About'
 import Writings from '../src/pages/Writings'
 import Works from '../src/pages/Works'
 import Contact from '../src/pages/Contact'
+import WritingsDetailed from './pages/WritingsDetailed';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
         <Route path={'/home'} element={<Home/>}/>
         <Route path={'/about'} element={<About/>}/>
         <Route path={'/writings'} element={<Writings/>}/>
+        <Route path={'/writings/:slug'} element={<WritingsDetailed/>}/>
         <Route path={'/works'} element={<Works/>}/>
         <Route path={'/contact'} element={<Contact/>}/>
       </Routes>
